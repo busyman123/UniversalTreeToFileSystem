@@ -1,0 +1,28 @@
+
+# How to Use It in Ubuntu
+
+1. Make the script executable (and optionally move it to ~/.local/bin/ so you can run it from anywhere):
+#chmod +x tree_builder.py
+
+
+# Save any ASCII tree into a .txt file (e.g., structure.txt):
+
+Native-Edge-Data-Trimmer/
+├── CMakeLists.txt               # C++20 build configuration linking Arrow & Parquet
+├── src/
+│   └── main.cpp                 # Core edge trimmer, Parquet joiners, MCAP writer, socket uplink
+├── data/
+│   └── waymo_v2/                # Modular Waymo Open Dataset v2 Parquet inputs
+│       ├── vehicle_pose/
+│       ├── lidar_box/
+│       ├── camera_image/
+│       └── lidar/
+├── trimmed_events/              # Local edge cache of triggered .mcap slices
+├── cloud_bucket/                # Cloud-ingested .mcap slices received by cloud_receiver.py
+├── cloud_receiver.py            # Cloud ingestion service (listens on 127.0.0.1:7447)
+├── dashboard.py                 # Streamlit executive ROI calculator & event replay viewer
+└── adas_trimmer_layout.json     # Pre-configured 3-panel Foxglove Studio layout template
+
+
+# Run the script against your text file:
+./tree_builder.py structure.txt
