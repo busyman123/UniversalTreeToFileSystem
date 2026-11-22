@@ -6,7 +6,7 @@ Make the script executable (and optionally move it to ~/.local/bin/ so you can r
 
 
 # Save any ASCII tree into a .txt file (e.g., structure.txt):
-
+```text
 Native-Edge-Data-Trimmer/
 ├── CMakeLists.txt               # C++20 build configuration linking Arrow & Parquet
 ├── src/
@@ -22,7 +22,7 @@ Native-Edge-Data-Trimmer/
 ├── cloud_receiver.py            # Cloud ingestion service (listens on 127.0.0.1:7447)
 ├── dashboard.py                 # Streamlit executive ROI calculator & event replay viewer
 └── adas_trimmer_layout.json     # Pre-configured 3-panel Foxglove Studio layout template
-
+```
 
 # Run the script against your text file:
 ./tree_builder.py structure.txt
