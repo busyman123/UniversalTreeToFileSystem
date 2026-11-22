@@ -1,7 +1,7 @@
 
 # How to Use It in Ubuntu
 
-1. Make the script executable (and optionally move it to ~/.local/bin/ so you can run it from anywhere):
+Make the script executable (and optionally move it to ~/.local/bin/ so you can run it from anywhere):
 #chmod +x tree_builder.py
 
 
